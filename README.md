@@ -49,3 +49,13 @@ Make sure you have Python 3.6 or higher installed. Then install the required Pyt
 
 ```bash
 python3 -m pip install psutil
+
+## Installation
+
+Make sure you have Python 3.6 or higher installed. Then install the required Python package `psutil` by running this command:
+
+```bash
+python3 -m pip install psutil
+
+python3 -m pip install --user psutil
+
