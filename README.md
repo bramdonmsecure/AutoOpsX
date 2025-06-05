@@ -12,6 +12,7 @@ import platform
 import datetime
 import logging
 import sys
+import os
 
 # Configurable thresholds
 CPU_THRESHOLD = 85  # percent
@@ -46,11 +47,16 @@ def check_memory():
         alert(f"High Memory Usage detected: {mem.percent}%")
 
 def check_disk():
-    # Check root partition
-    disk = psutil.disk_usage('/')
-    logging.info(f"Disk Usage: {disk.percent}%")
+    # Determine root path based on OS
+    if platform.system() == "Windows":
+        root_partition = os.getenv('SystemDrive', 'C:') + '\\'
+    else:
+        root_partition = '/'
+    
+    disk = psutil.disk_usage(root_partition)
+    logging.info(f"Disk Usage on {root_partition}: {disk.percent}%")
     if disk.percent > DISK_THRESHOLD:
-        alert(f"High Disk Usage detected: {disk.percent}%")
+        alert(f"High Disk Usage detected on {root_partition}: {disk.percent}%")
 
 def system_info():
     info = {
