@@ -4,13 +4,12 @@ _A powerful toolkit of automation scripts for IT operations, support, and securi
 
 ---
 
-## 📚 Table of Contents
+### 📚 Table of Contents
 
 - [About AutoOpsX](#about-autoopsx)
 - [Features](#features)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [How It Works](#how-it-works)
@@ -21,39 +20,32 @@ _A powerful toolkit of automation scripts for IT operations, support, and securi
 
 ---
 
-## 🌟 About AutoOpsX
+## About AutoOpsX
 
-AutoOpsX is designed to empower IT professionals and sysadmins with easy-to-use automation scripts that monitor system health metrics like CPU, memory, and disk usage — and alert you when things get out of hand. Whether you're managing Windows servers, Linux machines, or cloud infrastructure, AutoOpsX keeps you in the know and your systems humming.
-
----
-
-## 🚀 Features
-
-- ✅ Cross-platform support (Windows & Linux)
-- ✅ Real-time CPU, memory, and disk usage monitoring
-- ✅ Customizable alert thresholds for critical metrics
-- ✅ Logs detailed system info & health stats to file
-- ✅ Simple integration point to add email, Slack, or other alert systems
-- ✅ Lightweight and easy to extend with Python
+AutoOpsX is designed to empower IT pros and sysadmins with easy-to-use automation scripts that monitor system health — CPU, memory, and disk usage — and alert you when things go sideways. Whether you manage Windows servers, Linux boxes, or cloud instances, AutoOpsX keeps you informed and systems running smoothly.
 
 ---
 
-## 🛠️ Getting Started
+## Features
 
-### Prerequisites
-
-Before running AutoOpsX, make sure you have:
-
-- Python 3.6 or higher installed on your machine  
-- `pip` package manager (comes with Python by default)  
-- Internet access for installing dependencies
+- ✅ Cross-platform support for Windows & Linux  
+- ✅ Real-time monitoring of CPU, memory, and disk usage  
+- ✅ Customizable alert thresholds to fit your environment  
+- ✅ Detailed logging with timestamps for auditing  
+- ✅ Modular alert function ready for integration with email, Slack, or other tools  
+- ✅ Lightweight Python-based solution easy to extend and automate  
 
 ---
 
-### Installation
+## Getting Started
 
-1. **Clone the repository:**
+This section will get you up and running with AutoOpsX quickly.
+
+---
+
+## Installation
+
+Make sure you have Python 3.6 or higher installed. Then install the required Python package `psutil`:
 
 ```bash
-git clone https://github.com/yourusername/AutoOpsX.git
-cd AutoOpsX
+python3 -m pip install psutil
